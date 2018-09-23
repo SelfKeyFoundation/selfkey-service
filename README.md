@@ -2,7 +2,7 @@
 
 SelfKey Signature Verification Service
 
-## Usage
+## Install
 
 Clone, install and run - requires NodeJS
 
@@ -13,6 +13,18 @@ Clone, install and run - requires NodeJS
 `npm install`
 
 `npm run dev`
+
+## Usage
+
+Send a `POST` request to the service endpoint '/' with a nonce, signature and ethereum address in the body using the following fields:
+
+```
+nonce: <nonce value>
+signature: <signature value>
+publicKey: <ethereum address>
+```
+
+To create the data you can use the functions in the `selfkey.js` library - also see the test file for an example of this.
 
 ## Docker
 
