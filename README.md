@@ -7,8 +7,11 @@ SelfKey Signature Verification Service
 Clone, install and run - requires NodeJS
 
 `git clone git@github.com:SelfKeyFoundation/selfkey-svs.git`
+
 `cd selfkey-svs`
+
 `npm install`
+
 `npm run dev`
 
 ## Docker
@@ -16,6 +19,7 @@ Clone, install and run - requires NodeJS
 Build the container and run it - forward the port as you see fit
 
 `docker build .`
+
 `docker run -p 3018:3018 <container id>`
 
 ## Test
