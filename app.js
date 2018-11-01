@@ -13,7 +13,10 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.set('trust proxy', 1)
 
-app.get('/', (req, res) => res.status(200).json({message: 'SelfKey SVS Initialized'}))
+app.get('/', async (req, res) => {
+	let nonce = await selfkey.createNonce(64)
+	res.status(200).json({nonce: nonce})
+})
 
 app.post('/', async (req, res) => {
 	try {
