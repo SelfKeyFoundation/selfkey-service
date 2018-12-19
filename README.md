@@ -1,14 +1,14 @@
-# selfkey-svs
+# selfkey-service
 
-SelfKey Signature Verification Service
+SelfKey Service
 
 ## Install
 
 Clone, install and run - requires NodeJS
 
-`git clone git@github.com:SelfKeyFoundation/selfkey-svs.git`
+`git clone git@github.com:SelfKeyFoundation/selfkey-service.git`
 
-`cd selfkey-svs`
+`cd selfkey-service`
 
 `npm install`
 
@@ -24,7 +24,7 @@ signature: <signature value>
 publicKey: <ethereum address>
 ```
 
-To create the data you can use the functions in the `selfkey.js` library - also see the test file for an example of this.
+To create the data you can use the functions in the `selfkey-lib` library - also see the test file for an example of this.
 
 ## Docker
 
